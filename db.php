@@ -1,8 +1,8 @@
 <?php
-  $host = "localhost";
-  $dbUsername = "root";
-  $dbPassword = "1234";
-  $dbname = "Demo";
+  $host = "remotemysql.com";
+  $dbUsername = "fwlMeZ9mfD";
+  $dbPassword = "JGQSOqLVpW";
+  $dbname = "fwlMeZ9mfD";
 
 
   //Creating connection
