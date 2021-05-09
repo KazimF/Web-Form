@@ -12,9 +12,9 @@
 if (!empty($Name) || !empty($Highest_Qualification) || !empty($Year_Of_Passing) || !empty($Gender) ||
 !empty($Email) || !empty($Contact_No) || !empty($Course_Enroll) || !empty($Course_Type) || !empty($Preferred_Location)){
   $host = "remotemysql.com";
-  $dbUsername = "wrmks6DMfw";
-  $dbPassword = "H6liMGrb8N";
-  $dbname = "wrmks6DMfw";
+  $dbUsername = "fwlMeZ9mfD";
+  $dbPassword = "JGQSOqLVpW";
+  $dbname = "fwlMeZ9mfD";
 
   $con = new mysqli($host, $dbUsername,$dbPassword, $dbname);
   if(mysqli_connect_error()){
