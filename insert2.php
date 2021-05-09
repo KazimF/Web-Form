@@ -11,11 +11,11 @@
 
 if (!empty($Name) || !empty($Highest_Qualification) || !empty($Year_Of_Passing) || !empty($Gender) ||
 !empty($Email) || !empty($Contact_No) || !empty($Course_Enroll) || !empty($Course_Type) || !empty($Preferred_Location)){
-  // $host = "localhost";
-  // $dbUsername = "root";
-  // $dbPassword = "1234";
-  // $dbname = "Demo";
-
+//   $host = "localhost";
+//   $dbUsername = "root";
+//   $dbPassword = "1234";
+//   $dbname = "Demo";
+   
    $host = "remotemysql.com";
    $dbUsername = "fwlMeZ9mfD";
    $dbPassword = "JGQSOqLVpW";
@@ -26,7 +26,7 @@ if (!empty($Name) || !empty($Highest_Qualification) || !empty($Year_Of_Passing) 
   if(mysqli_connect_error()){
     die('Connection Error('. mysqli_connect_error().')'. mysqli_connect_error());
   }else {
-    $SELECT = " SELECT email From Submit Where email = ? Limit 1";
+    $SELECT = " SELECT Email From Submit Where Email = ? Limit 1";
     $INSERT = "INSERT Into Submit (Name,Highest_Qualification,Year_Of_Passing,Gender,Email,Contact_No,Course_Enroll,Course_Type, Preferred_Location) values (?,?,?,?,?,?,?,?,?)";
     //$INSERT = "INSERT Into Submit (Name,Highest_Qualification,Year_Of_Passing,Gender,Email,Contact_No,Course_Enroll,Course_Type, Preferred_Location) values ('$Name','$Highest_Qualification','$Year_Of_Passing','$Gender','$Email','$Contact_No','$Course_Enroll','$Course_Type','$Preferred_Location');";
 
@@ -59,4 +59,3 @@ if (!empty($Name) || !empty($Highest_Qualification) || !empty($Year_Of_Passing) 
 
 
 ?>
-
