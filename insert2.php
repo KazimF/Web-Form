@@ -60,4 +60,3 @@ if (!empty($Name) || !empty($Highest_Qualification) || !empty($Year_Of_Passing) 
 
 ?>
 
-<p>hello</p>
