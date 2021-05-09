@@ -21,7 +21,7 @@ background-size: cover;
 </head>
 <body background="bg.jpg"
 <br><br><br><br>
- <form action = "insert2.php" method ="POST">
+ <form action = "insert2.php" method ="GET">
   <table border="0" align = "center"  cellspacing="10" id="insert_tab">
    <tr>
    <h1> Summer Internship Program 2021...</h1>
