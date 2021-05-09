@@ -21,8 +21,8 @@ if (!empty($Name) || !empty($Highest_Qualification) || !empty($Year_Of_Passing) 
     die('Connection Error('. mysqli_connect_error().')'. mysqli_connect_error());
   }else {
     $SELECT = " SELECT email From Submit Where email = ? Limit 1";
-    //$INSERT = "INSERT Into fwlMeZ9mfD.Submit (Name,Highest_Qualification,Year_Of_Passing,Gender,Email,Contact_No,Course_Enroll,Course_Type, Preferred_Location) values ('$Name','$Highest_Qualification','$Year_Of_Passing','$Gender','$Email','$Contact_No','$Course_Enroll','$Course_Type','$Preferred_Location');";
-    $INSERT = "INSERT Into Submit (Name,Highest_Qualification,Year_Of_Passing,Gender,Email,Contact_No,Course_Enroll,Course_Type, Preferred_Location) values (?,?,?,?,?,?,?,?,?)";
+    $INSERT = "INSERT Into Submit (Name,Highest_Qualification,Year_Of_Passing,Gender,Email,Contact_No,Course_Enroll,Course_Type, Preferred_Location) values ('$Name','$Highest_Qualification','$Year_Of_Passing','$Gender','$Email','$Contact_No','$Course_Enroll','$Course_Type','$Preferred_Location');";
+    //$INSERT = "INSERT Into Submit (Name,Highest_Qualification,Year_Of_Passing,Gender,Email,Contact_No,Course_Enroll,Course_Type, Preferred_Location) values (?,?,?,?,?,?,?,?,?)";
 
     $stmt = $con->prepare($SELECT);
     $stmt->bind_param("s", $Email);
