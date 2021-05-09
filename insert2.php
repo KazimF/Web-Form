@@ -53,7 +53,7 @@ if (!empty($Name) || !empty($Highest_Qualification) || !empty($Year_Of_Passing) 
 
 
 }else {
-  echo "All field are Required";
+  echo "All field are Requiredddd";
   die();
 }
 
