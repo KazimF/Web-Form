@@ -23,7 +23,18 @@
 
   <?php
   //error_reporting(0);
-  include 'db.php';
+  $host = "remotemysql.com";
+  $dbUsername = "fwlMeZ9mfD";
+  $dbPassword = "JGQSOqLVpW";
+  $dbname = "fwlMeZ9mfD";
+
+
+ //Creating connection
+ $conn = new mysqli($host, $dbUsername , $dbPassword, $dbname);
+
+ if (mysqli_connect_error()) {
+   die('Connect!! Error('. mysqli_connect_error().')'. mysqli_connect_error());
+ }
   $query = "SELECT * FROM submit";
   $data = mysqli_query($conn,$query);
   $total = mysqli_num_rows($data);
