@@ -16,7 +16,7 @@ if (!empty($Name) || !empty($Highest_Qualification) || !empty($Year_Of_Passing) 
   // $dbPassword = "1234";
   // $dbname = "Demo";
 
-  $host = "remotemysql.com";
+   $host = "remotemysql.com";
    $dbUsername = "fwlMeZ9mfD";
    $dbPassword = "JGQSOqLVpW";
    $dbname = "fwlMeZ9mfD";
